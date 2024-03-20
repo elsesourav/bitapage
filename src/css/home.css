@@ -1,0 +1,34 @@
+
+section#me {
+   position: relative;
+   height: min(100svh, 500px);
+   width: 100svw;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   padding: 10px;
+}
+section#me #backgroundImage {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+   display: grid;
+   place-items: center;
+}
+
+section#me #backgroundImage img {
+   position: absolute;
+   width: auto;
+   margin-right: 20svw;
+   height: 100%;
+}
+section#me #bio {
+   position: absolute;
+   width: 300px;
+   margin-right: var(--gap);
+}
+section#me #bio > * {
+   padding: calc(var(--gap));
+   font-weight: bold;
+}
