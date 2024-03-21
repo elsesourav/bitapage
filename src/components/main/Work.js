@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/work.css";
+import "../../css/work.css";
 import CardList from "./CardList";
 
 class Work extends React.Component {

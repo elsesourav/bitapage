@@ -1,14 +1,14 @@
 import React from "react";
-import Home from "./Home";
-import Work from "./Work";
-import About from "./About";
 import "../css/home.css";
+import About from "./main/About";
+import Me from "./main/Me";
+import Work from "./main/Work";
 
 class Main extends React.Component {
    render() {
       return (
          <main>
-            <Home></Home>
+            <Me></Me>
             <Work></Work>
             <About></About>
          </main>

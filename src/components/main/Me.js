@@ -1,8 +1,8 @@
 import React from "react";
-import "../css/home.css";
-import me from "../img/me.png"
+import "../../css/home.css";
+import me from "../../img/me.png"
 
-class Home extends React.Component {
+class Me extends React.Component {
    render() {
       return (
          <section id="me">
@@ -22,4 +22,4 @@ class Home extends React.Component {
    }
 }
 
-export default Home;
+export default Me;

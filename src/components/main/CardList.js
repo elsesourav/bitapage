@@ -1,7 +1,7 @@
 import { useState } from "react";
-import "../css/work.css";
+import "../../css/work.css";
 import Card from "./Card";
-import ms from "../img/minesweeper.png";
+import ms from "../../img/minesweeper.png";
 
 function CardList(params) {
    const [cards] = useState([
