@@ -1,9 +1,9 @@
 import { useState } from "react";
-import "../../css/work.css";
+import "../../../utils/css/work.css";
 import Card from "./Card";
-import ms from "../../img/minesweeper.png";
+import ms from "../../../utils/img/minesweeper.png";
 
-function CardList(params) {
+export default function CardList(params) {
    const [cards] = useState([
       {
          src: ms,
@@ -48,5 +48,3 @@ function CardList(params) {
       </div>
    );
 }
-
-export default CardList;

@@ -1,4 +1,4 @@
-import "../../css/work.css";
+import "../../../utils/css/work.css";
 
 function Main(params) {
    return (
