@@ -1,0 +1,10 @@
+#user-log-in-out {
+   position: relative;
+   width: 100%;
+}
+#bodyCenter {
+   position: relative;
+   width: 100svw;
+   height: 100%;
+   padding: calc(var(--margin) * 2);
+}

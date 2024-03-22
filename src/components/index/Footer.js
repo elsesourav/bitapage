@@ -19,27 +19,27 @@ export default function Footer() {
             <div id="socialMedia" className="cell">
                <div className="name">Social Media</div>
                <div className="list">
-                  <a href="#">
+                  <a href="https://www.facebook.com/elsesourav" target="./">
                      <div className="icon">
                         <i className="sbi-facebook"></i>
                      </div>
                   </a>
-                  <a href="#">
+                  <a href="https://www.instagram.com/elsesourav" target="./">
                      <div className="icon">
                         <i className="sbi-instagram3"></i>
                      </div>
                   </a>
-                  <a href="#">
+                  <a href="https://www.linkedin.com/in/souravbarui" target="./">
                      <div className="icon">
                         <i className="sbi-linkedin1"></i>
                      </div>
                   </a>
-                  <a href="#">
+                  <a href="https://x.com/elsesourav" target="./">
                      <div className="icon">
                         <i className="sbi-twitter3"></i>
                      </div>
                   </a>
-                  <a href="#">
+                  <a href="https://www.github.com/elsesourav" target="./">
                      <div className="icon">
                         <i className="sbi-github"></i>
                      </div>

@@ -5,7 +5,7 @@ footer {
    display: flex;
    flex-direction: column;
    background: #1f1f2b;
-   padding: calc(var(--margin) * 3) var(--margin);
+   padding: calc(var(--margin)) var(--margin);
 }
 
 footer #content {
@@ -120,4 +120,5 @@ footer #content #commentMe.cell .cover .user-input #sandButton {
 footer #copyright {
    position: relative;
    text-align: center;
+   color: #777;
 }

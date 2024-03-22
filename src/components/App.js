@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import User from "./User";
+import Signin from "./Signin";
+import Signup from "./Signup";
 import Basic from "./Basic"
 
 import "../utils/css/global.css";
@@ -10,7 +11,8 @@ export default function App(params) {
       <BrowserRouter>
          <Routes>
             <Route index element={<Basic />}/>
-            <Route path="/user" element={<User />} />
+            <Route path="/signin" element={<Signin />} />
+            <Route path="/signup" element={<Signup />} />
          </Routes>
       </BrowserRouter>
    );

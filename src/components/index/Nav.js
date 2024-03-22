@@ -25,10 +25,7 @@ export default function Nav() {
                <a href="#content">Contact</a>
             </li>
             <li>
-               <a href="#">Sign in</a>
-            </li>
-            <li>
-               <a href="#">Sign up</a>
+               <a href="/signin">Sign in</a>
             </li>
          </div>
       </nav>
