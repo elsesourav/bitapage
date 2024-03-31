@@ -1,20 +1,31 @@
-import React from "react";
+import { useState } from "react";
+import styles from "../../../utils/css/InputField.module.css";
 
-import "../../../utils/css/input.css";
+export default function UserSignin({ name, type, ...rest }) {
+   const [show, setShow] = useState("");
+   const [eye, setEye] = useState(true);
 
+   const typingInput = ({ target }) =>
+      setShow(target.value === "" ? "" : "active");
+   const eyeInput = () => setEye(!eye);
 
-export default class UserSignin extends React.Component {
-   render() {
-      const { name, type, id, required } = this.props;
-      return (
-      <div className="input-box">
-         <label>{name}</label>
-         {required ? 
-            <input type={type} id={id} name={name} required /> :
-            <input type={type} id={id} name={name}/> 
-         }
-         <span className="highlight-line"></span>
+   return (
+      <div className={styles.cover}>
+         <div className={styles.inputBox}>
+            <label className={show && styles.active}>{name}</label>
+            <input
+               type={type === "password" ? (eye ? "password" : "text") : type}
+               {...rest}
+               onInput={typingInput}
+            />
+
+            {type.toLowerCase() === "password" && (
+               <div className={styles.eyeBtn} onClick={eyeInput}>
+                  <i className={eye ? "sbi-eye1" : "sbi-eye-slash"}></i>
+               </div>
+            )}
+         </div>
+         <div className={styles.highlightLine}></div>
       </div>
-      );
-   }
+   );
 }

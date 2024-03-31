@@ -1,0 +1,24 @@
+.buttonBox {
+   position: relative;
+   width: var(--input-w);
+   height: var(--input-h);
+   font-size: var(--font-s-sm);
+   padding: var(--gap);
+   border-radius: var(--input-f-r);
+   background-color: #00a6ff;
+   display: grid;
+   place-items: center;
+   margin-top: calc(var(--font-s-sm));
+   box-shadow: inset 1px 1px 3px #1cbfff, inset -1px -1px 3px #006bde;
+}
+.buttonBox input {
+   position: relative;
+   outline: none;
+   border: none;
+   width: 100%;
+   color: #000;
+   height: 100%;
+   background: transparent;
+   font-size: var(--input-fs);
+   font-weight: bold;
+}

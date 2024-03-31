@@ -1,0 +1,89 @@
+.cover {
+   position: relative;
+   width: 100%;
+   height: auto;
+   margin-top: calc(var(--font-s-sm) * 1.5);
+}
+.cover .inputBox {
+   position: relative;
+   width: var(--input-w);
+   height: var(--input-h);
+   font-size: var(--input-fs);
+   padding: var(--gap);
+   border-radius: var(--input-f-r);
+   background-color: #fff;
+   display: flex;
+   align-items: center;
+   box-shadow: inset -2px -2px 3px #ddd, inset 2px 2px 3px #777;
+   overflow: hidden;
+}
+.cover .inputBox label {
+   position: absolute;
+   padding: 2px 8px;
+   left: 0;
+   background: transparent;
+   border-radius: calc(var(--input-f-r) * 0.8);
+   font-weight: 500;
+   transform: translateY(0%) scale(1);
+   z-index: 1;
+   scale: 1;
+   color: #666;
+   transition: ease-in-out background 200ms, ease-in-out transform 200ms;
+}
+.cover .inputBox label.active {
+   transform: translateY(-80%) scale(0.8);
+   background: #fff;
+}
+.cover .inputBox input {
+   position: relative;
+   outline: none;
+   border: none;
+   width: 100%;
+   height: 100%;
+   background: transparent;
+   font-size: var(--font-fs);
+   z-index: 2;
+}
+.cover .inputBox .eyeBtn {
+   position: absolute;
+   width: var(--input-h);
+   height: var(--input-h);
+   right: 0;
+   top: 0;
+   display: grid;
+   place-items: center;
+   z-index: 2;
+}
+.cover .inputBox .eyeBtn i {
+   position: absolute;
+   width: 80%;
+   height: 80%;
+   color: #00a6ff;
+   z-index: -1;
+   display: grid;
+   place-items: center;
+   background: #fff;
+}
+
+.cover .highlightLine {
+   position: relative;
+   display: block;
+   width: 1px;
+   height: var(--input-e-h);
+   margin: calc(var(--gap) / 2);
+   border-radius: calc(var(--input-e-h) / 2);
+   background-color: transparent;
+   transition: ease-in-out 300ms width;
+}
+.cover .highlightLine:is(.red, .green, .blue) {
+   width: calc(100% - var(--gap));
+}
+.cover .highlightLine.red {
+   background-color: #f00;
+}
+.cover .highlightLine.green {
+   background-color: #0f0;
+}
+.cover .highlightLine.blue {
+   background-color: #00f;
+}

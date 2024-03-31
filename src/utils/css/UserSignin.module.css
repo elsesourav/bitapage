@@ -1,0 +1,44 @@
+.userLogInOut {
+   position: relative;
+   width: 100%;
+   height: 100svh;
+   display: grid;
+   place-items: center;
+   grid-template-rows: 1fr min-content;
+}
+.bodyCenter {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: linear-gradient(311.66deg, rgba(65, 72, 226, 0.2) -13.98%, rgba(65, 72, 226, 0) 42.49%), radial-gradient(94.22% 116.41% at 36.4% 82.85%, rgba(15, 111, 255, 0.2) 0%, rgba(15, 111, 255, 0) 100%), radial-gradient(135.79% 111.32% at 64.05% -16.67%, rgba(100, 255, 209, 0.9) 0%, rgba(81, 255, 224, 0) 100%), radial-gradient(86.55% 88.86% at 84.74% -26.75%, rgba(15, 255, 241, 0.8) 0%, rgba(15, 169, 255, 0) 100%), rgb(25, 27, 30);
+}
+.bodyCenter form {
+   position: relative;
+   height: min-content;
+   width: fit-content;
+   background: rgba(255, 255, 255, 0.3);
+   backdrop-filter: blur(5px);
+   padding: calc(var(--margin) * 4); 
+   border-radius: 8px;
+   border: solid 1px #fff;
+   box-shadow: 0 var(--gap) calc(var(--gap) * 3) #0005;
+}
+.bodyCenter form p {
+   font-size: var(--font-s-b);
+   text-align: center;
+   font-weight: bold;
+}
+.bodyCenter form .goPage {
+   position: relative; 
+   width: var(--input-w);
+   text-align: center;
+   height: auto;
+   padding: var(--margin);
+   color: #000;
+}
+.bodyCenter form .goPage a {
+   text-decoration: none;
+}
